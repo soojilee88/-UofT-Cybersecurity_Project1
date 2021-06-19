@@ -2,14 +2,14 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![Project_Diagram](../Images/Project_Diagram.png)
+![Project_Diagram](Images/ProjectDiagram.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .yml file may be used to install only certain pieces of it, such as Filebeat.
 
-  - [DVWA Deployment playbook](../Resources/dvwa-playbook.yml)
-  - [ELK Deployment playbook](../Resources/elk-playbook.yml)
-  - [Filebeat Deployment playbook](../Resources/filebeat-playbook.yml)
-  - [Metricbeat Deployment playbook](../Resources/metricbeat-playbook.yml)
+  - [DVWA Deployment playbook](Resources/dvwa-playbook.yml)
+  - [ELK Deployment playbook](Resources/elk-playbook.yml)
+  - [Filebeat Deployment playbook](Resources/filebeat-playbook.yml)
+  - [Metricbeat Deployment playbook](Resources/metricbeat-playbook.yml)
 
 This document contains the following details:
 - Description of the Topologu
@@ -92,7 +92,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![dockerps](../Images/dockerps.png)
+![dockerps](Images/dockerps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -115,8 +115,8 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the [elk-playbook.yml](../Resources/elk-playbook.yml) file to `/etc/ansible/roles/elk-playbook.yml`.
+- Copy the [elk-playbook.yml](Resources/elk-playbook.yml) file to `/etc/ansible/roles/elk-playbook.yml`.
 - Update the hosts file to include the IP of the webservers & elk servers.
 - Run the playbook, and navigate to `http://<your_elk_server_ip>:5601/app/kibana` to check that the installation worked as expected.
 
-![kibana-homepage](../Image/kibana-homepage)
+![kibana-homepage](Images/kibana-homepage.png)
